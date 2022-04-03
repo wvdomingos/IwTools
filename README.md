@@ -1,6 +1,6 @@
 # IwTools
 
-> :satellite: Ferramenta para monitoramento de dispositivos de rede sem fio
+> :satellite: Ferramenta para monitoramento em tempo real dos dispositivos de rede sem fio
 
 Com o uso da ferramenta, o administrador de redes poderá escolher quais informações irá coletar dos dispositivos de rede sem fio para resolver um problema espeficico, além de poder analiser o conjunto de dados e realizar auxiliar na tomada de decisão.
 
@@ -20,8 +20,14 @@ Faça o clone do repositório e instale a ferramenta com os seguintes comandos:
 
 ```bash
 $ git clone https://github.com/wvdomingos/IwTools.git
-$ cd IwTools/iwtools
+$ cd IwTools
 $ sudo make install
+```
+
+Para conferir a instalação, digite os comandos:
+```bash
+$ cd ~
+$ iwtools --version
 ```
 
 ### 🤔 Como usar?
