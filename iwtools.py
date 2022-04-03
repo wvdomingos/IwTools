@@ -52,6 +52,7 @@ import json
 
 # --------- Main
 def main():
+    
     argv = sys.argv[1:]
 
     try:
@@ -92,18 +93,21 @@ def main():
         )
 
     except getopt.GetoptError:
-        raise SystemExit(
-            f"Ops! Algo deu errado, favor consulte help com o seguinte comando: {sys.argv[0]} --help"
-        )
+        raise SystemExit(f"Ops! Algo deu errado, favor consulte a documentação com o comando: iwtools --help")
+        
 
-    if len(sys.argv) == 4:
+    if len(sys.argv[1:]) == 0:
+        raise SystemExit(f"Ops! Algo deu errado, favor consulte a documentação com o comando: iwtools --help")
+
+    elif len(sys.argv) == 4:
         ap = sys.argv[3]
+
     elif len(sys.argv) == 6:
         ap = sys.argv[3]
         mac = sys.argv[5]
         ap_mac = [sys.argv[3], sys.argv[5]]
-
-    if sys.argv[1] in ("-h", "--help"):
+    
+    elif sys.argv[1] in ("-h", "--help"):
         help(iwtools)
         sys.exit()
 

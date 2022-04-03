@@ -2,11 +2,11 @@
 
 > :satellite: Ferramenta para monitoramento em tempo real dos dispositivos de rede sem fio
 
-Com o uso da ferramenta, o administrador de redes poderá escolher quais informações irá coletar dos dispositivos de rede sem fio para resolver um problema espeficico, além de poder analiser o conjunto de dados e realizar auxiliar na tomada de decisão.
+Com o uso da ferramenta, o administrador de redes poderá escolher quais informações irá coletar dos dispositivos de rede sem fio para resolver um problema espeficico, além de poder analiser o conjunto de dados e auxiliar na tomada de decisão.
 
 ## :computer: Sobre a ferramenta
 
-O Iwtools tem como objetivo auxilar o administrador de rede no monitoramento remoto em tempo real dos dispositvos de rede sem fio, por meio de um terminal CLI ou com scripts Python, itegrando com outras ferramentas de monitoramento como Prometheus e OpenConfig.
+O Iwtools tem como objetivo auxilar o administrador de rede no monitoramento remoto em tempo real dos dispositvos de rede sem fio, por meio de um terminal CLI ou com scripts Python, podendo ser itegrando com outras ferramentas de monitoramento.
 
 ## Preparação
 Instalação das dependências

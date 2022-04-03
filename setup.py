@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from setuptools import setup
 
@@ -15,6 +15,5 @@ setup(
     entry_points='''
     [console_scripts]
     iwtools=iwtools:main
-    
     '''
 )
