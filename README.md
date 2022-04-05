@@ -1,6 +1,6 @@
 # IwTools
 
-> :satellite: Ferramenta para monitoramento em tempo real dos dispositivos de rede sem fio
+> :satellite: Ferramenta para monitoramento em tempo real dos dispositivos de rede sem fio.
 
 Com o uso da ferramenta, o administrador de redes poderá escolher quais informações irá coletar dos dispositivos de rede sem fio para resolver um problema espeficico, além de poder analiser o conjunto de dados e auxiliar na tomada de decisão.
 
@@ -110,5 +110,9 @@ $ iwtools --help
 | `--get-sta-json`   | `-i <AP>` | `-c <MAC>` | Gera arquivo Json sobre Station |
 
 
-## 🎞️ Demo
+## 🎞️ Demonstração
 [Click aqui!]() para assistir a demonstração da ferramenta.
+
+
+## Licença
+[Apache](LICENSE) 

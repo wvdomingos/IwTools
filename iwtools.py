@@ -107,12 +107,13 @@ def main():
         mac = sys.argv[5]
         ap_mac = [sys.argv[3], sys.argv[5]]
     
-    elif sys.argv[1] in ("-h", "--help"):
+    if sys.argv[1] in ("-h", "--help"):
         help(iwtools)
         sys.exit()
 
     elif sys.argv[1] == "--list-sta":
         # Lista os MAC das Station conectadas no AP
+        print("Entrei aqui")
         mac = iwtools.list_sta(ap)
         r = f"AP\tMAC\n"
         if len(mac) != 1:
