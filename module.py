@@ -9,6 +9,8 @@ IwTools
 from subprocess import Popen, PIPE
 import re
 
+VERSION = "0.1"
+
 class iwtools(object):
 
     

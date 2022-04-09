@@ -11,7 +11,7 @@ O Iwtools tem como objetivo auxilar o administrador de rede no monitoramento rem
 ## Preparação
 Instalação das dependências
 ```bash
-$ sudo apt-get install python3-setuptools 
+$ sudo apt-get install python3-setuptools iw make
 ```
 
 ## :rocket: Get Started
@@ -20,7 +20,7 @@ Faça o clone do repositório e instale a ferramenta com os seguintes comandos:
 
 ```bash
 $ git clone https://github.com/wvdomingos/IwTools.git
-$ cd IwTools
+$ cd iwtools
 $ sudo make install
 ```
 

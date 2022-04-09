@@ -4,10 +4,13 @@
 IwTools
   author: Wander Domingos (wandervilhalvadomingos@gmail.com)
 
-To see options:
-  sudo iwtools -h
+Para ver a lista de comandos:
+  iwtools -h
 
-Example:
+Para ver a versão:
+  iwtools -v
+
+Exemplo:
   iwtools <COMMAND> -i <AP> -c <MAC>
 
 Listas de Comandos:
@@ -47,20 +50,21 @@ Listas de Comandos:
 
 import sys
 import getopt
-from module import iwtools
+from module import iwtools, VERSION
 import json
 
 # --------- Main
 def main():
     
     argv = sys.argv[1:]
-
+    
     try:
         getopt.getopt(
             argv,
-            "hi:c:",
+            "vhi:c:",
             [
                 "help",
+                "version",
                 "list-sta=",
                 "get-inactive=",
                 "get-rxbytes=",
@@ -109,6 +113,10 @@ def main():
     
     if sys.argv[1] in ("-h", "--help"):
         help(iwtools)
+        sys.exit()
+
+    if sys.argv[1] in ("-v", "--version"):
+        print(f'VERSION = {VERSION}')
         sys.exit()
 
     elif sys.argv[1] == "--list-sta":
