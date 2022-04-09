@@ -1,8 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 """
 IwTools
-  author: Wander Domingos (wandervilhalvadomingos@gmail.com)
+  author: Wander Domingos (wander.domingos@edu.ufes.br)
 
 Para ver a lista de comandos:
   iwtools -h
@@ -121,7 +121,6 @@ def main():
 
     elif sys.argv[1] == "--list-sta":
         # Lista os MAC das Station conectadas no AP
-        print("Entrei aqui")
         mac = iwtools.list_sta(ap)
         r = f"AP\tMAC\n"
         if len(mac) != 1:

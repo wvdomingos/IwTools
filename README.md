@@ -11,7 +11,7 @@ O Iwtools tem como objetivo auxilar o administrador de rede no monitoramento rem
 ## Preparação
 Instalação das dependências
 ```bash
-$ sudo apt-get install python3-setuptools iw make
+$ sudo apt-get install git python3-setuptools iw make
 ```
 
 ## :rocket: Get Started
@@ -19,7 +19,7 @@ $ sudo apt-get install python3-setuptools iw make
 Faça o clone do repositório e instale a ferramenta com os seguintes comandos:
 
 ```bash
-$ git clone https://github.com/wvdomingos/IwTools.git
+$ git clone https://github.com/wvdomingos/iwtools.git
 $ cd iwtools
 $ sudo make install
 ```
@@ -30,9 +30,18 @@ $ cd ~
 $ iwtools --version
 ```
 
+![Instalação](img\install.gif)
+
 ### 🤔 Como usar?
 
 Para demonstrar o uso do IwTools, vamos emular um ambiente virtual de rede sem fio com a ferramenta [Mininet-WiFi](https://github.com/intrig-unicamp/mininet-wifi), onde temos um Acess Point e três estações conectas via WiFi.
+
+Para iniciar uma simples topologia com um Access Point e três estações conectadas, basta digitar o seguinte comando:
+```bash
+$ sudo mn --wifi --topo single,3
+
+mininet-wifi>
+``` 
 
 Primeiro listar as interfaces dos APs:
 ```bash
