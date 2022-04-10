@@ -66,11 +66,14 @@ AP	MAC	RSSI
 ap1-wlan1	02:00:00:00:00:00	-36
 ```
 
+![Instalação](img\demo1.gif)
+
 A seguir temos um fluxo demonstrando esse exemplo.
 
 <center>
     <img src='img/fluxo.svg' width=400pt>
 </center>
+
 
 ### :book: Help
 Comando para listar a documentação da ferramenta:
